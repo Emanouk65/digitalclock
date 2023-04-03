@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+    display: flex; /* Set display to flex */
+    flex-direction: row; /* Display children elements horizontally */
+    justify-content: center; /* Align children elements horizontally */
+    align-items: center; /* Align children elements vertically */
+    background-color: green; /* Set background color to green */
+  }
+  
+  .digitalclock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 767px) { /* Target screens with a maximum width of 767px (i.e., iPhones) */
+    .container {
+      flex-direction: column; /* Display children elements vertically */
+      height: 100vh; /* Set container height to 100% of viewport height */
+    }
+  
+    .digitalclock {
+      flex-direction: column; /* Display time elements vertically */
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
